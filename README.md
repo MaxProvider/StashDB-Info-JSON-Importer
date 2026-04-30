@@ -22,6 +22,10 @@ yt-dlp / Video Fetcher / MetaFetch
 
 ## What It Does
 
+<p align="center">
+  <img src="screenshots/screenshot.png" alt="Info JSON Importer" width="900">
+</p>
+
 When you download videos with [yt-dlp](https://github.com/yt-dlp/yt-dlp), it can optionally save a companion `.info.json` file alongside each video containing metadata from the source site — title, upload date, tags, uploader name, description and more.
 
 The plugin scans scenes already indexed in Stash, locates matching `.info.json` sidecar files, and imports the following fields into Stash:
@@ -169,3 +173,37 @@ Run a Metadata Scan in Stash (**Settings → Tasks → Scan**) after the import 
 - Scenes without a matching `.info.json` file are skipped silently
 - Tags and studios are created with the exact names from the JSON file
 - Description is imported as the Stash **Details** field on each scene
+
+---
+
+## License
+
+MIT License
+
+Free to use, modify and redistribute with attribution retained.
+
+See the [LICENSE](LICENSE) file for full details.
+
+---
+
+## Companion Projects
+
+Part of the metadata workflow ecosystem:
+
+- **Video Fetcher 2026**  
+  Video downloading and library building
+
+- **MetaFetch**  
+  Fetch missing `.info.json` metadata for existing libraries
+
+- **StashDB Info JSON Importer**  
+  Import metadata directly into Stash
+
+---
+
+<p align="center">
+  <strong>StashDB Info JSON Importer</strong><br>
+  © 2026 David Smith<br>
+  <a href="https://maxprovider.net">maxprovider.net</a><br>
+  david@maxprovider.net
+</p>
